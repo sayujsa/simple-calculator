@@ -20,21 +20,21 @@ operations = {
 
 while answer == "yes":
     if num1 == None:
-        num1 = int(input("Enter first number : "))
+        num1 = float(input("Enter first number : "))
         print("")
         
         for x in operations:
             print(x)
             
         action = input("Enter operation: ")
-        num2 = int(input("\nEnter second number : "))
+        num2 = float(input("\nEnter second number : "))
         
     else:
         for x in operations:
             print(x)
             
         action = input("Enter operation: ")
-        num2 = int(input("Enter number : "))
+        num2 = float(input("Enter number : "))
         
     print("\nAnswer is : "+str(operations[action](num1,num2))+"\n")
     answer = input("Keep calculating? (yes/no) : ")
